@@ -129,15 +129,6 @@ The framework calculates the following metrics automatically:
 
 If you use this dataset or code, please cite our paper:
 
-```bibtex
-@article{anonymous2025package,
-  title={From Text to Structure: The PACKaGE Benchmark for Bidirectional Causal Reasoning in Paragraphs and Graphs},
-  author={Anonymous},
-  journal={Under Review},
-  year={2025}
-}
-```
-
 ## ⚖️ License
 
 The code is released under the MIT License. The dataset leverages data from OpenAlex (CC BY 4.0) and the Causal News Corpus (CC0).
