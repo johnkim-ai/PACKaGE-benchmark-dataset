@@ -1,0 +1,47 @@
+# define task t2g, g2t, t2g2t, g2t2g
+task: g2t2g
+
+# define input data
+data: 
+  text_csv: path_paragraphs.csv
+  text_col: paragraph_plain
+  graph_csv: path_paragraphs.csv
+  graph_col: graph_json
+  gold_text_col: paragraph_plain
+  gold_graph_col: graph_json
+
+# define few-shot examples here (for each task)
+prompt_ft:
+  fewshot_t2g: fewshot_t2g.jsonl
+  fewshot_g2t: fewshot_g2t.jsonl
+  use_prompt_ft: true
+
+# define API keys
+env:
+  OPENAI_API_KEY: "sk-proj-your-key"
+  XAI_API_KEY: "xai-your-key"
+  ANTHROPIC_API_KEY: "sk-ant-your-key"
+  HF_TOKEN: "hf_your-key"
+  GOOGLE_API_KEY: "AIzayourkey"
+    
+# define models
+models:
+  - provider: openai
+    name: gpt-5  
+  - provider: anthropic
+    name: claude-sonnet-4-5-20250929
+  - provider: google
+    name: gemini-2.5-flash
+  - provider: google
+    name: gemini-3-pro-preview
+  - provider: xai
+    name: grok-4-fast-reasoning 
+
+# define runtime
+runtime:
+  parallel_models: true
+  max_workers: 16
+
+# define output path
+output:
+  root_dir: runs/ft_plaintxt
