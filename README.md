@@ -19,12 +19,8 @@ Unlike existing sentence-level resources, PACKaGE operates at the **paragraph le
 
 | File | Rows | Description |
 | --- | --- | --- |
-| `data/package_dataset 4.csv` | 4,566 | **Released PACKaGE dataset** (filler sentences removed) |
-| `data/package_dataset 4_uncleaned.csv` | 4,566 | Same rows before `strip_filler.py` |
-| `data/path_paragraphs_final3.csv` | 5,010 | Intermediate paragraphs and graphs after two smoothing passes |
-| `data/Papers 2021-2024.csv` | 1,859 | Raw corpus: OpenAlex sentences with `<ARG0>` (cause) / `<ARG1>` (effect) spans in `causal_text_w_pairs` |
-
-Columns of `package_dataset 4.csv`:
+| `data/package_dataset_example.csv` | 4,566 | **Released PACKaGE dataset** (filler sentences removed) |
+Columns of `package_dataset_example.csv`:
 
 | Column | Content |
 | --- | --- |
