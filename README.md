@@ -1,6 +1,6 @@
 # PACKaGE: Paragraph-level Annotated Causal Knowledge and Graph–tExt
 
-This repository contains the official implementation and dataset construction pipeline for **PACKaGE**, a benchmark designed to evaluate bidirectional causal reasoning in Large Language Models (LLMs).
+This repository contains the official implementation and dataset construction pipeline for **PACKaGE** (From Text to Structure: The PACKaGE Benchmark for Bidirectional Causal Reasoning in Paragraphs and Graphs), a benchmark designed to evaluate bidirectional causal reasoning in Large Language Models (LLMs).
 
 Unlike existing sentence-level resources, PACKaGE operates at the **paragraph level**, pairing extended textual narratives with complex, multi-hop Directed Acyclic Graphs (DAGs). The benchmark supports four primary tasks: Text-to-Graph (T2G), Graph-to-Text (G2T), and their cyclic counterparts (T2G2T, G2T2G).
 
@@ -127,7 +127,28 @@ The framework calculates the following metrics automatically:
 
 ## 📝 Citation
 
-If you use this dataset or code, please cite our paper:
+If you use this dataset or code, please cite our paper: @inproceedings{kim-etal-2026-text,
+    title = "From Text to Structure: The {PACK}a{GE} Benchmark for Bidirectional Causal Reasoning in Paragraphs and Graphs",
+    author = "Kim, Juhyeon  and
+      Lee, Dohun  and
+      Jang, Jiwon  and
+      Shim, Joseph  and
+      Park, Hyunwoo",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond",
+    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.emnlp-main.27/",
+    doi = "10.18653/2026.emnlp-main.27",
+    pages = "585--611",
+    ISBN = "979-8-89176-459-0",
+    abstract = "Large Language Models (LLMs) have demonstrated remarkable capabilities across various domains, yet they struggle with causal reasoning tasks. We introduce PACKaGE (Paragraph-level Annotated Causal Knowledge and Graph{--}tExt), a causal benchmark dataset that pairs paragraph-level texts with explicit causal graphs. Unlike prior sentence-level resources, our benchmark dataset (i) operates at paragraph level to capture various and interdependent causal pathways; (ii) offers multimodal annotations including full graphs and contextualized relations; and (iii) maps extended passages to comprehensive graphs. We detail a four-stage construction pipeline: collecting causality-labeled and fact-centric texts, inducing graphs from span-tagged pairs, condensing nodes, and recomposing path-aligned narratives. Overall, the paired evaluation highlights a persistent discrepancy between linguistic competence and causal understanding in LLMs, pointing to the need for further development."
+}
 
 ## ⚖️ License
 
