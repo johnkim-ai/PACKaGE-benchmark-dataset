@@ -132,7 +132,8 @@ The code is released under the MIT License. The dataset leverages data from Open
 ## 📝 Citation
 
 If you use this dataset or code, please cite our paper: 
-```@inproceedings{kim-etal-2026-text,
+```
+@inproceedings{kim-etal-2026-text,
     title = "From Text to Structure: The {PACK}a{GE} Benchmark for Bidirectional Causal Reasoning in Paragraphs and Graphs",
     author = "Kim, Juhyeon  and
       Lee, Dohun  and
