@@ -149,7 +149,7 @@ If you use this dataset or code, please cite our paper:
     pages = "585--611",
     ISBN = "979-8-89176-459-0",
     abstract = "Large Language Models (LLMs) have demonstrated remarkable capabilities across various domains, yet they struggle with causal reasoning tasks. We introduce PACKaGE (Paragraph-level Annotated Causal Knowledge and Graph{--}tExt), a causal benchmark dataset that pairs paragraph-level texts with explicit causal graphs. Unlike prior sentence-level resources, our benchmark dataset (i) operates at paragraph level to capture various and interdependent causal pathways; (ii) offers multimodal annotations including full graphs and contextualized relations; and (iii) maps extended passages to comprehensive graphs. We detail a four-stage construction pipeline: collecting causality-labeled and fact-centric texts, inducing graphs from span-tagged pairs, condensing nodes, and recomposing path-aligned narratives. Overall, the paired evaluation highlights a persistent discrepancy between linguistic competence and causal understanding in LLMs, pointing to the need for further development."
-}```
+}'''
 
 ## ⚖️ License
 
